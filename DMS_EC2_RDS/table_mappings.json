@@ -1,0 +1,15 @@
+{
+    "rules": [
+      {
+        "rule-type": "selection",
+        "rule-id": "846765846",
+        "rule-name": "846765846",
+        "object-locator": {
+          "schema-name": "vsv",
+          "table-name": "customers"
+        },
+        "rule-action": "include",
+        "filters": []
+      }
+    ]
+  }
