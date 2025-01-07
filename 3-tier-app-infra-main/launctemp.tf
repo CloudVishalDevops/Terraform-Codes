@@ -15,7 +15,7 @@ resource "aws_launch_template" "frontend" {
   image_id = data.aws_ami.example.id
   instance_type = "t2.micro"
   vpc_security_group_ids = [aws_security_group.frontend-server-sg.id]
-  key_name = "us-west-2" 
+  key_name = "ap-southeast-2" 
   user_data = filebase64("${path.module}/frontend-lt.sh")
   #default_version = 1
   update_default_version = true
@@ -46,8 +46,8 @@ resource "aws_launch_template" "backend" {
   image_id = data.aws_ami.example1.id
   instance_type = "t2.micro"
   vpc_security_group_ids = [aws_security_group.backend-server-sg.id]
-  key_name = "us-west-2" 
-  user_data = filebase64("${path.module}/backend-lt.sh")
+  key_name = "ap-aouth-2" 
+  user_data = filebase64("${path.module}/backend-it.sh")
   #default_version = 1
   update_default_version = true
   tag_specifications {

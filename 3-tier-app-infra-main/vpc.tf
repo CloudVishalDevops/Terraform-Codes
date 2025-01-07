@@ -12,7 +12,7 @@ resource "aws_vpc" "three-tier" {
 resource "aws_subnet" "pub1" {
     vpc_id = aws_vpc.three-tier.id
     cidr_block = "172.20.1.0/24"
-    availability_zone = "us-west-2a"
+    availability_zone = "ap-southeast-2a"
     map_public_ip_on_launch = true  # for auto asign public ip for subnet
     tags = {
     Name = "pub-1a"
@@ -22,7 +22,7 @@ resource "aws_subnet" "pub1" {
 resource "aws_subnet" "pub2" {
     vpc_id = aws_vpc.three-tier.id
     cidr_block = "172.20.2.0/24"
-    availability_zone = "us-west-2b"
+    availability_zone = "ap-southeast-2b"
     map_public_ip_on_launch = true  # for auto asign public ip for subnet
     tags = {
     Name = "pub-2b"
@@ -32,7 +32,7 @@ resource "aws_subnet" "pub2" {
 resource "aws_subnet" "prvt3" {
     vpc_id = aws_vpc.three-tier.id
     cidr_block = "172.20.3.0/24"
-    availability_zone = "us-west-2a"
+    availability_zone = "ap-southeast-2a"
     tags = {
     Name = "prvt-3a"
   }
@@ -41,7 +41,7 @@ resource "aws_subnet" "prvt3" {
 resource "aws_subnet" "prvt4" {
     vpc_id = aws_vpc.three-tier.id
     cidr_block = "172.20.4.0/24"
-    availability_zone = "us-west-2b"
+    availability_zone = "ap-southeast-2b"
     tags = {
     Name = "prvt-4b"
   }
@@ -51,7 +51,7 @@ resource "aws_subnet" "prvt4" {
 resource "aws_subnet" "prvt5" {
     vpc_id = aws_vpc.three-tier.id
     cidr_block = "172.20.5.0/24"
-    availability_zone = "us-west-2a"
+    availability_zone = "ap-southeast-2a"
     tags = {
     Name = "prvt-5a"
   }
@@ -60,7 +60,7 @@ resource "aws_subnet" "prvt5" {
 resource "aws_subnet" "prvt6" {
     vpc_id = aws_vpc.three-tier.id
     cidr_block = "172.20.6.0/24"
-    availability_zone = "us-west-2b"
+    availability_zone = "ap-southeast-2b"
     tags = {
     Name = "prvt-6b"
   }
@@ -69,7 +69,7 @@ resource "aws_subnet" "prvt6" {
 resource "aws_subnet" "prvt7" {
     vpc_id = aws_vpc.three-tier.id
     cidr_block = "172.20.7.0/24"
-    availability_zone = "us-west-2a"
+    availability_zone = "ap-southeast-2a"
     tags = {
     Name = "prvt-7a"
   }
@@ -78,7 +78,7 @@ resource "aws_subnet" "prvt7" {
 resource "aws_subnet" "prvt8" {
     vpc_id = aws_vpc.three-tier.id
     cidr_block = "172.20.8.0/24"
-    availability_zone = "us-west-2b"
+    availability_zone = "ap-southeast-2b"
     tags = {
     Name = "prvt-8b"
   }
