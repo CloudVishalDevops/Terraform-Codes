@@ -1,5 +1,5 @@
 resource "aws_instance" "luffy_server" {
-    ami = "ami-0146fc9ad419e2cfd"
+    ami = "ami-0d6560f3176dc9ec0"
     instance_type = "t2.medium"
 
     tags = {

@@ -1,7 +1,7 @@
 # create instance 
 
 resource "aws_instance" "luffy-ec2" {
-    ami = "ami-0146fc9ad419e2cfd"
+    ami = "ami-0d6560f3176dc9ec0"
     instance_type = "t2.micro"
     subnet_id = aws_subnet.luffy.id
     key_name = "luffy"
