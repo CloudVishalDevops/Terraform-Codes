@@ -112,7 +112,7 @@ resource "aws_security_group" "allow_traffic" {
 }
 
 resource "aws_instance" "luffy-server" {
-    ami = "ami-0146fc9ad419e2cfd"
+    ami = "ami-0d6560f3176dc9ec0"
     instance_type = "t2.micro"
     key_name = "luffy"
 
@@ -126,7 +126,7 @@ resource "aws_instance" "luffy-server" {
 }
 
 resource "aws_instance" "luffy-prvt-server" {
-    ami = "ami-0146fc9ad419e2cfd"
+    ami = "ami-0d6560f3176dc9ec0"
     instance_type = "t2.micro"
     key_name = "luffy"
     vpc_security_group_ids= [ aws_security_group.allow_traffic.id ]
