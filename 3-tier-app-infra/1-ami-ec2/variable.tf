@@ -1,8 +1,7 @@
 variable "ami" {
     description = "ami"
     type = string
-    default = "ami-0d6560f3176dc9ec0"
-
+    default = "ami-0a8f40a451672ea1d"
   
 }
 variable "instance-type" {
@@ -14,6 +13,6 @@ variable "instance-type" {
 variable "key-name" {
     description = "keyname"
     type = string
-    default = "om"
+    default = "aws_key"
   
 }
